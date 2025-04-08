@@ -6,7 +6,7 @@ total_diffusion_steps: 50
 guidance_scale: 7.5
 
 
-source_image_path: 'source_image/van-gogh-painting/van-gogh-painting.jpg'
+source_image_path: /Users/yothinsaengsakoon/Documents/swap/swap-anything/source_image/apple/apple.jpg
 source_subject_word: 'nothing'
 source_prompt: "a photo of nothing"
 target_subject_word: 'football'
