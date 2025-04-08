@@ -226,7 +226,9 @@ def generate_json_config(source_image_path, source_subject_word, source_prompt, 
     
     index = dict['source_mask_path'].rfind('/')
     dict['square_source_mask_path'] = dict['source_mask_path'][:index+1] + 'square_' + dict['source_mask_path'][index+1:]
-    
+    for k,v in dict.items():
+        print(f"\033[91m{k}:\033[0m")
+        print(f"\033[91m{v}:\033[0m")
     mask = cv2.imread(dict['source_mask_path'])[:,:,0] / 255.0
     domo_mask_binary = np.zeros_like(mask)
     domo_mask_binary[mask > 0.5] = 1
